@@ -62,7 +62,7 @@ pipeline{
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image kastrov/swiggy:latest > trivy.txt" 
+                sh "trivy image asaikale/swiggy:latest > trivy.txt" 
             }
         }
         stage('Deploy to container'){
